@@ -12,6 +12,10 @@ window.onload = function(){
     document.getElementById("light-bottom").innerHTML = go;
 }
 
+
+
+
+
 function toggleRoodLicht(){
     if(roodLichtStaatAan == false){
         document.getElementById("light-top").style.backgroundColor = "red";
@@ -24,20 +28,23 @@ function toggleRoodLicht(){
 }
 
 function toggleOranjeLicht(){
-    if(document.getElementById("light-middle").style.backgroundColor == "gray"){
-        document.getElementById("light-middle").style.backgroundColor = "orange"
+    if(oranjeLichtStaatAan == false){ 
+        document.getElementById("light-middle").style.backgroundColor = "orange";
+        oranjeLichtStaatAan = true;
     }
     else{
         document.getElementById("light-middle").style.backgroundColor = "gray";
+        oranjeLichtStaatAan = false;
     }
 }
 
 function toggleGroenLicht(){
-    if(document.getElementById("light-bottom").style.backgroundColor == "gray"){
+    if(groenLichtStaatAan == false){ 
         document.getElementById("light-bottom").style.backgroundColor = "green";
+        groenLichtStaatAan = true;
     }
     else{
         document.getElementById("light-bottom").style.backgroundColor = "gray";
+        groenLichtStaatAan = false;
     }
-    
 }
