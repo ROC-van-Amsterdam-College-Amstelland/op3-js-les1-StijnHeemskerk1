@@ -16,6 +16,8 @@ window.onload = function(){
     document.getElementById("right-light-bottom").innerHTML = go;
 
     //JOUW CODE HIER
+    document.getElementById('left-stoplight-label').innerHTML="A";
+    document.getElementById('right-stoplight-label').innerHTML="B";
 }
 
 function toggleRoodLicht(){
@@ -28,6 +30,20 @@ function toggleRoodLicht(){
         roodLichtStaatAan = false;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function toggleOranjeLicht(){
     if(oranjeLichtStaatAan == false){
