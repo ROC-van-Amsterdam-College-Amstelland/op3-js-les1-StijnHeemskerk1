@@ -4,8 +4,11 @@ var go = "groen";
 
 window.onload = function(){
     document.getElementById("light-top").innerHTML = stop;
+    document.getElementById("light-top").style.backgroundColor='red';
     document.getElementById("light-middle").innerHTML = maybe;
-    document.getElementById("light-bottom").innerHTML = go;
+    document.getElementById("light-middle").style.backgroundColor='orange';
+    document.getElementById("light-bottom").innerHTML = 'go';
+    document.getElementById("light-bottom").style.backgroundColor='green';
 
     //JOUW CODE HIER
 }
